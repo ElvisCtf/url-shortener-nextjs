@@ -7,6 +7,10 @@ import ShortenResult from "./components/result";
 export default function ShortenerPage() {
   const [shortenURL, setShortenURL] = useState<string>("");
 
+  const handleFailure = () => {
+    alert("Failed to shorten URL. Please try again.");
+  }
+
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       
@@ -17,7 +21,7 @@ export default function ShortenerPage() {
           <p className="text-gray-500 mt-2">Create and manage short URLs quickly.</p>
         </header>
 
-        <URLForm onSuccess={setShortenURL} />
+        <URLForm onSuccess={setShortenURL} onFailure={handleFailure} />
 
         <ShortenResult shortenURL={shortenURL} />
       </div>
