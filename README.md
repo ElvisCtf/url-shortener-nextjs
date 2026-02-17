@@ -46,3 +46,5 @@ npm run dev
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Screenshots
+<img src="https://github.com/user-attachments/assets/9c7257d3-a33e-4d3e-b0a1-82bede4032fa" />
+<img src="https://github.com/user-attachments/assets/44a09d99-7c91-4e81-9b31-98d52f98e00f" />
